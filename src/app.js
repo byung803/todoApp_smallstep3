@@ -8,7 +8,8 @@ import Router from './router';
 import './styles/styles.scss';
 import 'normalize.css/normalize.css';
 
-const store = createStore(reducer);
+const store = createStore(reducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 store.subscribe(() => {
     console.log(store.getState());
 })

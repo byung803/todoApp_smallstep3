@@ -1,5 +1,3 @@
-import React from 'react';
-import { shallow } from 'enzyme';
 import { addTodo, removeTodo, setVisibilityFilter, toggleTodo } from '../../actions/index';
 
 test('should test addTodo action generator', () => {
